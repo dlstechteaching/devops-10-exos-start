@@ -1,1 +1,2 @@
-module.exports =  (names) => names.filter(name => name.toLowerCase().indexOf('x') === -1);
+module.exports = (names) =>
+    names.filter((name) => name.toLowerCase().indexOf("x") === -1);
