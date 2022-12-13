@@ -1,9 +1,1 @@
-module.exports = function (names) {
-	const updateNames = [];
-	names.forEach(name => {
-		if (name.toLowerCase().indexOf('x') === -1) {
-			updateNames.push(name);
-		}
-	});
-	return updateNames;
-};
+module.exports =  (names) => names.filter(name => name.toLowerCase().indexOf('x') === -1);
