@@ -15,4 +15,9 @@ describe('excludeNamesWithX tests suites', () => {
 		const result = excludeNamesWithX(['DMX','Xzibit','JeanKevin']);
 		expect(result).toEqual(['JeanKevin']); 
 	});
+
+	it('should return an array with JC and Leo only as only xena contains the letter "x" ', () => {
+		const result = excludeNamesWithX(['JC','Leo','xena']);
+		expect(result).toEqual(['JC','Leo']); 
+	});
 });
