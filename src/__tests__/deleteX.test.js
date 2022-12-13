@@ -7,7 +7,7 @@ describe("deleteX test suite", ()=>{
             const result=deleteX(tab);
             expect(result).toEqual(tab);
     });
-        it("should return the tab witout the word with x", ()=> {
+        it("should return the tab witout the word with 'X' letter", ()=> {
             const tab =["DMX," ,"Xzibit", "JeanKevin"];
             const result=deleteX(tab);
             expect(result).toEqual(["JeanKevin"]);
