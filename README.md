@@ -1,7 +1,7 @@
 # devops-10-exo-start
 
 ## Description
-
+Site that regroups Belgian exoplanet discoveries.
 Vanilla JS app used to apply devops principles
 
 -   TDD
