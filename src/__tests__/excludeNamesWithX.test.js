@@ -11,5 +11,4 @@ describe("excludeNameWithX tests suites", () => {
         const result = excludeNamesWithX(["Momo", "Hadji", "Leo"]);
         expect(result).toEqual(["Momo", "Hadji", "Leo"]);
     });
-
 });
