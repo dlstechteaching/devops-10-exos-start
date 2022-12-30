@@ -1,3 +1,4 @@
+/* eslint-disable linebreak-style */
 const { getCurrentMonth } = require("../app");
 const { isAdmin } = require("../app");
 
