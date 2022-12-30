@@ -11,4 +11,11 @@ describe("excludeNameWithX tests suites", () => {
         const result = excludeNamesWithX(["Momo", "Hadji", "Leo"]);
         expect(result).toEqual(["Momo", "Hadji", "Leo"]);
     });
+
+    it("should return the array with names without 'X' (uppercase)", () => {
+        const result = excludeNamesWithX(["DMX", "Xzibit", "JeanKevin"]);
+        expect(result).toEqual(["JeanKevin"]);
+    });
+
+     
 });
