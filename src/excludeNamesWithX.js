@@ -1,6 +1,6 @@
 module.exports = function (array) {
     if (array.length === 0) return "Table empty";
-    const newArray = [];
+   /** const newArray = [];
     const reg = new RegExp("[Xx]+");
     for (let index = 0; index < array.length; index++) {
         const element = array[index];
@@ -8,5 +8,7 @@ module.exports = function (array) {
             newArray.push(element);
         }
     }
-    return newArray;
+    return newArray;*/ 
+    const reg = new RegExp("[Xx]+");
+    return array.filter(name => !reg.test(name));
 };
