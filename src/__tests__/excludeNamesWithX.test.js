@@ -1,4 +1,3 @@
-/* eslint-disable linebreak-style */
 const excludeNamesWithX = require("../excludeNamesWithX");
 
 describe("excludeNameWithX tests suites", () => {
@@ -17,5 +16,8 @@ describe("excludeNameWithX tests suites", () => {
         expect(result).toEqual(["JeanKevin"]);
     });
 
-     
+    it("should return the array with names without 'X' ( lowercase)", () => {
+        const result = excludeNamesWithX(["JC", "Leo", "xena"]);
+        expect(result).toEqual(["JC", "Leo"]);
+    });
 });

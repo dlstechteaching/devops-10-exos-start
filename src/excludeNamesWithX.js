@@ -1,11 +1,12 @@
 module.exports = function (array) {
     if (array.length === 0) return "Table empty";
     const newArray = [];
-    array.forEach(name => {
-        if(name.indexOf('X') === -1){
-            newArray.push(name);
+    const reg = new RegExp("[Xx]+");
+    for (let index = 0; index < array.length; index++) {
+        const element = array[index];
+        if (!reg.test(element)) {
+            newArray.push(element);
         }
-    });
-
+    }
     return newArray;
 };
