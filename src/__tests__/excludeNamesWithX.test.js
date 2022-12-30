@@ -7,5 +7,9 @@ describe("excludeNameWithX tests suites", () => {
         expect(result).toEqual("Table empty");
     });
 
-  
+    it("should return the array with all names if the array doesn't contain any name with 'X'", () => {
+        const result = excludeNamesWithX(["Momo", "Hadji", "Leo"]);
+        expect(result).toEqual(["Momo", "Hadji", "Leo"]);
+    });
+
 });
