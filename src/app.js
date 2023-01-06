@@ -19,6 +19,14 @@ const getCurrentMonth = (date = new Date()) => {
     return months[currentMonth];
 };
 
+const removeLetterXFromArray = (array) => {
+    newArray = [];
+    array.forEach((element) => {
+        if (!element.toLowerCase().includes("x")) newArray.push(element);
+    });
+    return newArray;
+};
+
 const isAdmin = (userId) => userId === "admin" || userId === "sudo";
 
 try {
@@ -29,3 +37,4 @@ try {
 
 exports.getCurrentMonth = getCurrentMonth;
 exports.isAdmin = isAdmin;
+exports.removeLetterXFromArray = removeLetterXFromArray;
