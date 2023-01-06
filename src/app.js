@@ -19,6 +19,10 @@ const getCurrentMonth = (date = new Date()) => {
     return months[currentMonth];
 };
 
+const removeLetterXFromArray = (array) => {
+    return [""];
+};
+
 const isAdmin = (userId) => userId === "admin" || userId === "sudo";
 
 try {
@@ -29,3 +33,4 @@ try {
 
 exports.getCurrentMonth = getCurrentMonth;
 exports.isAdmin = isAdmin;
+exports.removeLetterXFromArray = removeLetterXFromArray;

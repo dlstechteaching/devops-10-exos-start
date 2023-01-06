@@ -1,5 +1,6 @@
 const { getCurrentMonth } = require("../app");
 const { isAdmin } = require("../app");
+const { removeLetterXFromArray } = require("../app");
 
 jest.useFakeTimers().setSystemTime(new Date("2020-01-01"));
 
@@ -19,5 +20,12 @@ describe("app tests suites - isAdmin", () => {
     test("should return true as user is admin", () => {
         const result = isAdmin("admin");
         expect(result).toBe(true);
+    });
+});
+
+describe("app tests suites - removeLetterXFromArray", () => {
+    test("should return array with an empty string", () => {
+        const result = removeLetterXFromArray(["x"]);
+        expect(result).toBe([""]);
     });
 });
