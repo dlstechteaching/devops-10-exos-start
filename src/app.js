@@ -20,7 +20,11 @@ const getCurrentMonth = (date = new Date()) => {
 };
 
 const removeLetterXFromArray = (array) => {
-    return [""];
+    newArray = [];
+    array.forEach((element) => {
+        if (!element.toLowerCase().includes("x")) newArray.push(element);
+    });
+    return newArray;
 };
 
 const isAdmin = (userId) => userId === "admin" || userId === "sudo";

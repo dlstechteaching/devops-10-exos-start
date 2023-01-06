@@ -24,8 +24,12 @@ describe("app tests suites - isAdmin", () => {
 });
 
 describe("app tests suites - removeLetterXFromArray", () => {
-    test("should return array with an empty string", () => {
+    test("should return an empty array", () => {
         const result = removeLetterXFromArray(["x"]);
-        expect(result).toBe([""]);
+        expect(result).toStrictEqual([]);
+    });
+    test("should return array with 2 names removed", () => {
+        const result = removeLetterXFromArray(["DMX", "Xzibit", "JeanKevin"]);
+        expect(result).toStrictEqual(["JeanKevin"]);
     });
 });
