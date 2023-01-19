@@ -1,6 +1,6 @@
 const { getCurrentMonth } = require("../app");
 const { isAdmin } = require("../app");
-const {seachWord} = require("../searchWord");
+//const { searchWord } = require("../searchWord");
 
 jest.useFakeTimers().setSystemTime(new Date("2020-01-01"));
 
@@ -24,9 +24,9 @@ describe("app tests suites - isAdmin", () => {
 });
 
 describe("test a function that removes all words containing the letter x", () => {
-    test("should return false when function doesn't exist", ()=> {
-        const tab = [''];
-        const reponse = seachWord(tab);
-        expect(reponse).toBe(['']);
+    test("should return [] when given empty table", () => {
+        const reponse = searchWord([]);
+        console.log(response);
+        expect(reponse).toBe([]);
     });
 });
