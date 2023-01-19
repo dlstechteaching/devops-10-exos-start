@@ -11,8 +11,13 @@ describe("excludeNamesWithX tests suites", () => {
         expect(result).toEqual(['Momo','Hadji','Leo']);
     });
 
-    it('should return an array with JeanKevin only as it is the only ame without the letter X', () =>{
+    it('should return an array with JeanKevin only as it is the only name without the letter X', () =>{
         const result = excludeNamesWithX(['DMX','Xavier','JeanKevin']);
         expect(result).toEqual(['JeanKevin']);
+    });
+
+    it('should return an array with JC and Leo only as it is xena with the letter x', () =>{
+        const result = excludeNamesWithX(['JC','xena','Leo']);
+        expect(result).toEqual(['JC','Leo']);
     });
 });
