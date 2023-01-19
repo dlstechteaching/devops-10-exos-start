@@ -1,12 +1,11 @@
 const { removeNameWithLetter } = require("../name");
 
-
+const tableName1 = ['Momo', 'Hadji', 'Leo'];
 const tableName2 = ['DMX', 'Xzibit', 'JeanKevin'];
 const tableName3 = ['JC', 'Leo', 'xena'];
 
 describe("test if it remove the name of the list when using the parameter X", () => {
     test("should a table with all the same elements", () => {
-        const tableName1 = ['Momo', 'Hadji', 'Leo'];
         const result = removeNameWithLetter(tableName1);
         expect(result).toEqual(tableName1);
         expect(result.length).toBe(3);
